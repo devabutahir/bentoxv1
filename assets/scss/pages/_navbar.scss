@@ -33,9 +33,9 @@
             }
         }
         .custom-nav {
-            border-top: 1px solid #222426;
-            padding-top: 16px;
-            text-align: center;
+            // border-top: 1px solid #222426;
+            // padding-top: 16px;
+            // text-align: center;
             .menu-item,
             .menu-link {
                 button, a {
@@ -73,7 +73,7 @@
             }
             @include minQuery(992) {
                 .menu-item {
-                    padding: 34px 0;
+                    padding: 20px 0;
                     button {
                         &:hover {
                             button {
@@ -92,7 +92,7 @@
                     opacity: 0;
                     width: max-content;
                     visibility: hidden;
-                    transform: translateY(50px);
+                    transform: translateY(30px);
                     text-wrap: nowrap;
                     transition: var(--transition);
                     display: initial !important;
@@ -100,8 +100,9 @@
                     z-index: 10;
                     pointer-events: none;
                     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    padding: 1px 16px 12px;
                     .sub-menu{
-                        border-left: 2px solid var(--p1);
+                        // border-left: 2px solid var(--p1);
                         left:  99%;
                         top: -55px;
                         z-index: 9;
@@ -113,7 +114,7 @@
                         >.sub-menu {
                             opacity: 1;
                             visibility: visible;
-                            transform: translateY(60px);
+                            transform: translateY(40px);
                             pointer-events: auto;
                         }
                     }
@@ -173,7 +174,7 @@
                 }
             }
         }
-        padding: 17px 10px 22px;
+        padding: 2px 40px 2px;
         border-radius: 20px;
         border: 1px solid var(--Neutral-02-Black-Neutral-03, #222426);
         background: rgba(34, 36, 38, 0.40);
