@@ -380,13 +380,6 @@ svg{
 .title-extraclr{
     color: #B3B6B9;
 }
-.resizin-img{
-    width: 220px !important;
-    img{
-        width: 220px !important;
-        height: 150px;
-    }
-}
 // text slde 
 
 //marque slider custom //
@@ -856,12 +849,14 @@ svg{
         border-radius: 24px;
         transition: all 0.9s;
     }
+    .widing{
+        width: 100%;
+        height: 100%;
+    }
     img{
         transition: all 0.4s;
         overflow: hidden;
         border-radius: 24px;
-        width: 100%;
-        height: 100%;
     }
     .aroha-boxwrap{
         position: absolute;
@@ -871,6 +866,7 @@ svg{
         transition: all 0.9s;
         opacity: 0;
         visibility: hidden;
+        width: 100%;
         .aroha-box{
             max-width: 420px;
             @include maxQuery(991){
@@ -879,10 +875,9 @@ svg{
         }
         .arrow{
             display: block;
-            width: 120px;
-            display: flex;
-            justify-content: flex-end;
-            object-fit: contain;
+            // display: flex;
+            // justify-content: flex-end;
+            // object-fit: contain;
             margin-left: 20px;
             transition: all 0.5s;
         }

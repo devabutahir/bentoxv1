@@ -3680,14 +3680,6 @@ svg path {
   color: #B3B6B9;
 }
 
-.resizin-img {
-  width: 220px !important;
-}
-.resizin-img img {
-  width: 220px !important;
-  height: 150px;
-}
-
 .body-social li a {
   width: 100px;
   height: 100px;
@@ -4118,12 +4110,14 @@ svg path {
   border-radius: 24px;
   transition: all 0.9s;
 }
+.all-proitem .widing {
+  width: 100%;
+  height: 100%;
+}
 .all-proitem img {
   transition: all 0.4s;
   overflow: hidden;
   border-radius: 24px;
-  width: 100%;
-  height: 100%;
 }
 .all-proitem .aroha-boxwrap {
   position: absolute;
@@ -4133,6 +4127,7 @@ svg path {
   transition: all 0.9s;
   opacity: 0;
   visibility: hidden;
+  width: 100%;
 }
 .all-proitem .aroha-boxwrap .aroha-box {
   max-width: 420px;
@@ -4144,11 +4139,6 @@ svg path {
 }
 .all-proitem .aroha-boxwrap .arrow {
   display: block;
-  width: 120px;
-  display: flex;
-  justify-content: flex-end;
-  -o-object-fit: contain;
-     object-fit: contain;
   margin-left: 20px;
   transition: all 0.5s;
 }
