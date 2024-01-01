@@ -2979,11 +2979,14 @@ iframe {
     transform: rotate(360deg);
   }
 }
+.navbar-brand h4 {
+  margin: initial;
+  line-height: initial;
+}
+
 .header-section {
   width: 100%;
   z-index: 99;
-  margin-top: 60px;
-  margin-bottom: 60px;
   position: relative;
 }
 .header-section .nav-brand {
@@ -3053,6 +3056,9 @@ iframe {
 }
 @media (max-width: 991px) {
   .header-section .main-navbar .custom-nav {
+    border-top: 1px solid #313437;
+    padding-top: 10px;
+    text-align: center;
     width: 100%;
   }
   .header-section .main-navbar .custom-nav .sub-menu {
@@ -3161,18 +3167,6 @@ iframe {
 }
 .header-section .golelayla-logo {
   letter-spacing: 1.8px;
-}
-@media (max-width: 1600px) {
-  .header-section {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-}
-@media (max-width: 1600px) {
-  .header-section {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
 }
 
 .header-sectionone .main-navbar {
@@ -3686,6 +3680,14 @@ svg path {
   color: #B3B6B9;
 }
 
+.resizin-img {
+  width: 220px !important;
+}
+.resizin-img img {
+  width: 220px !important;
+  height: 150px;
+}
+
 .body-social li a {
   width: 100px;
   height: 100px;
@@ -4168,7 +4170,7 @@ svg path {
 }
 @media (max-width: 1399px) {
   .all-proitem {
-    padding: 0 22px 0;
+    padding: 0 0px 0;
   }
   .all-proitem:hover .aroha-boxwrap {
     bottom: 20px;

@@ -1,9 +1,12 @@
-
+.navbar-brand{
+    h4{
+        margin: initial;
+        line-height: initial;
+    }
+}
 .header-section {
     width: 100%;
     z-index: 99;
-    margin-top: 60px;
-    margin-bottom: 60px;
     position: relative;
     .nav-brand {
         max-width: 265px;
@@ -33,9 +36,6 @@
             }
         }
         .custom-nav {
-            // border-top: 1px solid #222426;
-            // padding-top: 16px;
-            // text-align: center;
             .menu-item,
             .menu-link {
                 button, a {
@@ -58,6 +58,9 @@
                 }
             }
             @include maxQuery(991) {
+                border-top: 1px solid #313437;
+                padding-top: 10px;
+                text-align: center;
                 width: 100%;
                 .sub-menu {
                     display: none;
@@ -188,14 +191,6 @@
     }
     .golelayla-logo{
         letter-spacing: 1.8px;
-    }
-    @include maxQuery(1600){
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    @include maxQuery(1600){
-        margin-top: 30px;
-        margin-bottom: 30px;
     }
 }
 

@@ -380,6 +380,13 @@ svg{
 .title-extraclr{
     color: #B3B6B9;
 }
+.resizin-img{
+    width: 220px !important;
+    img{
+        width: 220px !important;
+        height: 150px;
+    }
+}
 // text slde 
 
 //marque slider custom //
@@ -901,7 +908,7 @@ svg{
         }
     }
     @include maxQuery(1399){
-        padding: 0 22px 0;
+        padding: 0 0px 0;
         &:hover{
             .aroha-boxwrap{
                 bottom: 20px;
