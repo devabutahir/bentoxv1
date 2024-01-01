@@ -657,9 +657,37 @@ select {
 }
 .kewta-btn{
 	transition: all 0.4s;
+	.kew-arrow{
+		position: relative;
+		overflow: hidden;
+		.kt-one{
+			position: absolute;
+			bottom: -40px;
+			left: -50px;
+			transition: all 0.8s;
+		}
+		.kt-two{
+			transition: all 0.8s;
+			position: absolute;
+			top: 6px;
+			left: 7px;
+			svg{
+				transition: all 0.8s;
+			}
+		}
+	}
 	&:hover{
 		.kew-arrow{
-			transform: rotate(40deg);
+			.kt-one{
+				position: absolute;
+				bottom: 6px;
+				left: 9px;
+			}
+			.kt-two{
+				position: absolute;
+				top: -40px;
+				left: 40px;
+			}
 		}
 	}
 }

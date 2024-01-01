@@ -1401,8 +1401,34 @@ select {
 .kewta-btn {
   transition: all 0.4s;
 }
-.kewta-btn:hover .kew-arrow {
-  transform: rotate(40deg);
+.kewta-btn .kew-arrow {
+  position: relative;
+  overflow: hidden;
+}
+.kewta-btn .kew-arrow .kt-one {
+  position: absolute;
+  bottom: -40px;
+  left: -50px;
+  transition: all 0.8s;
+}
+.kewta-btn .kew-arrow .kt-two {
+  transition: all 0.8s;
+  position: absolute;
+  top: 6px;
+  left: 7px;
+}
+.kewta-btn .kew-arrow .kt-two svg {
+  transition: all 0.8s;
+}
+.kewta-btn:hover .kew-arrow .kt-one {
+  position: absolute;
+  bottom: 6px;
+  left: 9px;
+}
+.kewta-btn:hover .kew-arrow .kt-two {
+  position: absolute;
+  top: -40px;
+  left: 40px;
 }
 
 .kew-text {
