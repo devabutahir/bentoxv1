@@ -38,9 +38,11 @@
         .custom-nav {
             .menu-item,
             .menu-link {
+                color: var(--n0);
                 button, a {
                     font-size: 16px !important;
                     font-weight: 500;
+                    color: var(--n0);
                     @include maxQuery(991){
                         font-size: 16px !important;
                         font-weight: 400 !important;
@@ -87,6 +89,9 @@
                             }
                         }
                     }
+                    a{
+                        color: var(--n0);
+                    }
                 }
                 .sub-menu {
                     position: absolute;
@@ -105,10 +110,16 @@
                     pointer-events: none;
                     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                     padding: 1px 16px 12px;
+                    a{
+                        color: var(--n0);
+                    }
                     .sub-menu{
                         left:  99%;
                         top: -55px;
                         z-index: 9;
+                        a{
+                            color: var(--n0);
+                        }
                     }
                 }
                 .menu-item {

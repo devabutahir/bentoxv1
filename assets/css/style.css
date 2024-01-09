@@ -351,6 +351,9 @@
 .dark-theme .body-social:hover .soci svg path {
   stroke: var(--s1) !important;
 }
+.dark-theme .menu-item .sub-menu a {
+  color: #fff !important;
+}
 
 .display-one {
   font-size: 120px;
@@ -3049,11 +3052,16 @@ iframe {
     display: initial !important;
   }
 }
+.header-section .main-navbar .custom-nav .menu-item,
+.header-section .main-navbar .custom-nav .menu-link {
+  color: var(--n0);
+}
 .header-section .main-navbar .custom-nav .menu-item button, .header-section .main-navbar .custom-nav .menu-item a,
 .header-section .main-navbar .custom-nav .menu-link button,
 .header-section .main-navbar .custom-nav .menu-link a {
   font-size: 16px !important;
   font-weight: 500;
+  color: var(--n0);
 }
 @media (max-width: 991px) {
   .header-section .main-navbar .custom-nav .menu-item button, .header-section .main-navbar .custom-nav .menu-item a,
@@ -3105,6 +3113,9 @@ iframe {
   .header-section .main-navbar .custom-nav .menu-item button:hover button::after {
     transform: rotate(-180deg);
   }
+  .header-section .main-navbar .custom-nav .menu-item a {
+    color: var(--n0);
+  }
   .header-section .main-navbar .custom-nav .sub-menu {
     position: absolute;
     top: 20px;
@@ -3124,10 +3135,16 @@ iframe {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 1px 16px 12px;
   }
+  .header-section .main-navbar .custom-nav .sub-menu a {
+    color: var(--n0);
+  }
   .header-section .main-navbar .custom-nav .sub-menu .sub-menu {
     left: 99%;
     top: -55px;
     z-index: 9;
+  }
+  .header-section .main-navbar .custom-nav .sub-menu .sub-menu a {
+    color: var(--n0);
   }
   .header-section .main-navbar .custom-nav .menu-item {
     position: relative;
