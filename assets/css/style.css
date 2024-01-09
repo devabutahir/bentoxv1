@@ -3053,6 +3053,7 @@ iframe {
 .header-section .main-navbar .custom-nav .menu-link button,
 .header-section .main-navbar .custom-nav .menu-link a {
   font-size: 16px !important;
+  font-weight: 500;
 }
 @media (max-width: 991px) {
   .header-section .main-navbar .custom-nav .menu-item button, .header-section .main-navbar .custom-nav .menu-item a,

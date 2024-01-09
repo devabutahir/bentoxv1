@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var checkLink = $('.menu-link a[href="' + removeGarbage + '"]');
       var targetClass = checkLink.addClass('active');
       targetClass.parents('.menu-item').addClass('active-parents');
-      $('.active-parents > button').addClass('active'); 
+      $('.active-parents > a').addClass('active'); 
       // Navbar Auto Active Class  //
 
       // navbar custom//
@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function () {
         $('body').toggleClass('overflow-hidden');
         $(this).toggleClass('open');
       });
-      $('.menu-item button').on('click', function () {
+      $('.menu-item a').on('click', function () {
         $(this).siblings("ul").slideToggle(300);
       });
       // navbar custom//

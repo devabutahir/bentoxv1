@@ -40,6 +40,7 @@
             .menu-link {
                 button, a {
                     font-size: 16px !important;
+                    font-weight: 500;
                     @include maxQuery(991){
                         font-size: 16px !important;
                         font-weight: 400 !important;
@@ -105,7 +106,6 @@
                     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                     padding: 1px 16px 12px;
                     .sub-menu{
-                        // border-left: 2px solid var(--p1);
                         left:  99%;
                         top: -55px;
                         z-index: 9;
