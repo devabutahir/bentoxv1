@@ -2916,6 +2916,9 @@ iframe {
 .rtlwrap .rtl-v {
   display: none;
 }
+.rtlwrap .article-proitem {
+  direction: rtl;
+}
 .rtlwrap .s-shape1 {
   position: absolute;
   right: initial;
@@ -2945,6 +2948,10 @@ iframe {
 
 .ltr-v {
   display: none;
+}
+
+.not-changelrt {
+  direction: ltr;
 }
 
 .tigger-arrow {

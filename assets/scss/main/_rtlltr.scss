@@ -9,6 +9,9 @@
     .rtl-v{
         display: none;
     }
+    .article-proitem{
+        direction: rtl;
+    }
     .s-shape1{
         position: absolute;
         right: initial;
@@ -36,8 +39,12 @@
         left: 20px !important;
     }
 }
+
 .ltr-v{
     display: none;
+}
+.not-changelrt{
+    direction: ltr;
 }
 .tigger-arrow{
     position: fixed;
