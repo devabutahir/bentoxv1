@@ -1512,7 +1512,9 @@ svg{
                 }
             }
         }
-        &:hover{
+        &:focus,
+        &:hover,
+        &.active{
           background: var(--s1);
           border-color: var(--s1); 
           color: var(--n0); 

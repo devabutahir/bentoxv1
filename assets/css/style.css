@@ -4817,15 +4817,15 @@ svg path {
 .button-socialwrap .cmn-socialbutton .sicon svg path {
   stroke: var(--s1) !important;
 }
-.button-socialwrap .cmn-socialbutton:hover {
+.button-socialwrap .cmn-socialbutton:focus, .button-socialwrap .cmn-socialbutton:hover, .button-socialwrap .cmn-socialbutton.active {
   background: var(--s1);
   border-color: var(--s1);
   color: var(--n0);
 }
-.button-socialwrap .cmn-socialbutton:hover .sicon {
+.button-socialwrap .cmn-socialbutton:focus .sicon, .button-socialwrap .cmn-socialbutton:hover .sicon, .button-socialwrap .cmn-socialbutton.active .sicon {
   border: 1px solid var(--n0);
 }
-.button-socialwrap .cmn-socialbutton:hover .sicon svg path {
+.button-socialwrap .cmn-socialbutton:focus .sicon svg path, .button-socialwrap .cmn-socialbutton:hover .sicon svg path, .button-socialwrap .cmn-socialbutton.active .sicon svg path {
   stroke: var(--n0) !important;
 }
 @media (max-width: 1399px) {
