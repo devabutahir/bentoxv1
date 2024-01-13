@@ -77,6 +77,9 @@
   --bg2: #262629;
   --header: rgba(223, 255, 94, 0.08);
 }
+.dark-theme .exprience-download {
+  border: 1px solid #a7a4a4;
+}
 .dark-theme .main-navbar {
   border-radius: 20px;
   border: 1px solid rgba(179, 182, 185, 0.2) !important;
@@ -4863,6 +4866,19 @@ svg path {
   .button-socialwrap .cmn-socialbutton .sicon svg {
     width: 18px;
   }
+}
+
+.exprience-download {
+  border: 1px solid #323232;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.exprience-download:hover {
+  border-color: var(--s1);
 }
 
 .error-bodys {
