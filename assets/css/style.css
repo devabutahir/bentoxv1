@@ -3398,6 +3398,7 @@ iframe {
   opacity: 0.2;
   background: var(--p1);
   filter: blur(200px);
+  z-index: 0;
 }
 .body-bg::after {
   position: absolute;
@@ -3410,6 +3411,7 @@ iframe {
   opacity: 0.1;
   background: var(--s1);
   filter: blur(200px);
+  z-index: 0;
 }
 @media (max-width: 1900px) {
   .body-bg::before {
@@ -3947,7 +3949,7 @@ svg path {
           backdrop-filter: blur(25px);
 }
 .body-box1 .skill-tagslide {
-  height: 45px;
+  height: 50px;
 }
 @media (max-width: 1199px) {
   .body-box1 {
@@ -4040,6 +4042,10 @@ svg path {
 
 .repeat-skilltools .design-tag svg path {
   stroke: #B3B6B9;
+}
+
+.bento-tag:hover {
+  color: var(--s1);
 }
 
 .layla-infoabout {
