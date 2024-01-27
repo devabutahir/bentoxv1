@@ -230,6 +230,10 @@
 			a{
 				background: #d5d1d10a !important;
 				border: 1px solid #b7b5b558;
+				&:hover{
+					background: #9747FF !important;
+					color: #fff !important;
+				}
 			}
 		}
 	}

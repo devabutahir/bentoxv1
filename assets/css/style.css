@@ -201,6 +201,10 @@
   background: rgba(213, 209, 209, 0.0392156863) !important;
   border: 1px solid rgba(183, 181, 181, 0.3450980392);
 }
+.dark-theme .article-details-tag li a:hover {
+  background: #9747FF !important;
+  color: #fff !important;
+}
 .dark-theme .searchbox form {
   border: 1px solid rgba(183, 181, 181, 0.3450980392);
   background: #fff;
