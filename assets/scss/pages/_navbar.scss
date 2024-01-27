@@ -67,7 +67,8 @@
                 width: 100%;
                 .sub-menu {
                     display: none;
-                    margin-bottom: 10px;
+                    padding-bottom: 10px;
+                    margin-top: 10px;
                     li{
                         a{
                             font-size: 14px !important;
@@ -110,6 +111,7 @@
                     pointer-events: none;
                     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                     padding: 1px 16px 12px;
+                    border: 1px solid #323232;
                     a{
                         color: var(--n0);
                     }
