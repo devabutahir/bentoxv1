@@ -24,60 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         // Click to Scroll Top //
 
-        // dark light and rtl ltr
-          // setTheme(localStorage.getItem("theme"));
-          // setDirection(localStorage.getItem("direction"));
-
-          // $(".mode--toggle").on("click", function () {
-          //     toggleTheme();
-          // });
-
-          // $(".direction--toggle, .direction--toggletwo").on("click", function () {
-          //     toggleDirection();
-          // });
-
-          // function toggleTheme() {
-          //     const currentTheme = localStorage.getItem("theme");
-
-          //     if (currentTheme === "light-theme") {
-          //         setTheme("dark-theme");
-          //     } else {
-          //         setTheme("light-theme");
-          //     }
-          // }
-
-          // function toggleDirection() {
-          //     const currentDirection = localStorage.getItem("direction");
-
-          //     if (currentDirection === "ltr") {
-          //         setDirection("rtl");
-          //     } else {
-          //         setDirection("ltr");
-          //     }
-          // }
-
-          // function setTheme(theme) {
-          //     localStorage.setItem("theme", theme);
-
-          //     if (theme === "dark-theme") {
-          //         $("html").addClass("dark-theme").removeClass("light-theme");
-          //         $(".mode--toggle").find("img").attr("src", "assets/images/sun.png");
-          //     } else {
-          //         $("html").addClass("light-theme").removeClass("dark-theme");
-          //         $(".mode--toggle").find("img").attr("src", "assets/images/moon.png");
-          //     }
-          // }
-
-          // function setDirection(direction) {
-          //     localStorage.setItem("direction", direction);
-
-          //     if (direction === "rtl") {
-          //         $("html").attr("dir", "rtl");
-          //     } else {
-          //         $("html").attr("dir", "ltr");
-          //     }
-          // }
-
           setTheme(localStorage.getItem("theme"));
           setDirection(localStorage.getItem("direction"));
           

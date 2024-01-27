@@ -253,6 +253,9 @@
   outline: none;
   border: unset;
 }
+.dark-theme .article-tabingbox .nav .nav-item .nav-link.active {
+  background: rgba(225, 215, 215, 0.3450980392);
+}
 .dark-theme .article-categories .artivle {
   border: 1px solid rgba(183, 181, 181, 0.3450980392);
 }
@@ -709,7 +712,7 @@ a {
 a:focus, a:hover {
   text-decoration: none;
   outline: none;
-  color: var(--n700);
+  color: var(--n0);
 }
 a i {
   font-weight: 400;
@@ -3389,6 +3392,7 @@ iframe {
   width: 100%;
   background-color: var(--n1);
   position: relative;
+  z-index: 2;
 }
 .body-bg::before {
   position: absolute;
@@ -3401,7 +3405,7 @@ iframe {
   opacity: 0.2;
   background: var(--p1);
   filter: blur(200px);
-  z-index: 0;
+  z-index: -1;
 }
 .body-bg::after {
   position: absolute;
@@ -3414,7 +3418,7 @@ iframe {
   opacity: 0.1;
   background: var(--s1);
   filter: blur(200px);
-  z-index: 0;
+  z-index: -1;
 }
 @media (max-width: 1900px) {
   .body-bg::before {
@@ -3515,9 +3519,6 @@ iframe {
     font-size: 28px;
     font-weight: 400 !important;
   }
-}
-.titles-designer:hover a {
-  color: var(--s1);
 }
 
 .arro-rocket {
@@ -3885,9 +3886,6 @@ svg path {
     height: 28px;
   }
 }
-.common-serbox:hover .fs-five {
-  color: var(--s1);
-}
 
 .s-shape1 {
   position: absolute;
@@ -3950,6 +3948,8 @@ svg path {
   background: linear-gradient(153deg, rgba(255, 255, 255, 0.12) -65.62%, rgba(255, 255, 255, 0.04) 83.28%);
   -webkit-backdrop-filter: blur(25px);
           backdrop-filter: blur(25px);
+  position: relative;
+  z-index: 1;
 }
 .body-box1 .skill-tagslide {
   height: 50px;
@@ -4201,9 +4201,6 @@ svg path {
   display: block;
   margin-left: 20px;
   transition: all 0.5s;
-}
-.all-proitem .aroha-boxwrap:hover .arrow {
-  transform: rotate(-10deg);
 }
 @media (max-width: 450px) {
   .all-proitem .heighting {
@@ -4576,9 +4573,9 @@ svg path {
   color: var(--n0);
   display: block;
 }
-.tag-ar:hover {
+.tag-ar.active, .tag-ar:hover {
   background: var(--s1);
-  color: var(--n0);
+  color: var(--n0) !important;
 }
 
 .leave-comment textarea,
@@ -4606,10 +4603,19 @@ svg path {
   color: var(--n06);
   font-size: 18px;
 }
-.article-details-rightbar button svg {
+.article-details-rightbar button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--s1);
-  padding: 4px;
   border-radius: 4px;
+}
+.article-details-rightbar button svg {
+  padding: 4px;
+  width: 30px;
+  height: 30px;
 }
 
 @media (max-width: 575px) {
@@ -4795,6 +4801,7 @@ svg path {
   align-items: center;
   gap: 16px 51px;
   flex-wrap: wrap;
+  z-index: 2;
 }
 .button-socialwrap .cmn-socialbutton {
   border-radius: 100px;

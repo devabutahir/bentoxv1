@@ -36,6 +36,7 @@
     width: 100%;
     background-color: var(--n1);
     position: relative;
+    z-index: 2;
     &::before{
         position: absolute;
         top: -200px;
@@ -47,7 +48,7 @@
         opacity: 0.2;
         background: var(--p1);
         filter: blur(200px);
-        z-index: 0;
+        z-index: -1;
     }
     &::after{
         position: absolute;
@@ -60,7 +61,7 @@
         opacity: 0.1;
         background: var(--s1);
         filter: blur(200px);
-        z-index: 0;
+        z-index: -1;
     }
     @include maxQuery(1900){
         &::before{
@@ -154,11 +155,6 @@
         a{
             font-size: 28px;
             font-weight: 400 !important;
-        }
-    }
-    &:hover{
-        a{
-            color: var(--s1);
         }
     }
 }
@@ -551,11 +547,6 @@ svg{
             height: 28px;
         }
     }
-    &:hover{
-        .fs-five{
-            color: var(--s1);
-        }
-    }
 }
 .s-shape1{
     position: absolute;
@@ -620,6 +611,8 @@ svg{
         border: 1px solid #323232;
         background: linear-gradient(153deg, rgba(255, 255, 255, 0.12) -65.62%, rgba(255, 255, 255, 0.04) 83.28%);
         backdrop-filter: blur(25px);
+        position: relative;
+        z-index: 1;
     }
     .skill-tagslide{
         height: 50px;
@@ -882,16 +875,8 @@ svg{
         }
         .arrow{
             display: block;
-            // display: flex;
-            // justify-content: flex-end;
-            // object-fit: contain;
             margin-left: 20px;
             transition: all 0.5s;
-        }
-        &:hover{
-            .arrow{
-                transform: rotate(-10deg);
-            }
         }
     }
     .heighting{
@@ -1262,9 +1247,10 @@ svg{
     transition: all 0.4s;
     color: var(--n0);
     display: block;
+    &.active,
     &:hover{
         background: var(--s1);
-        color: var(--n0);
+        color: var(--n0) !important;
     }
 }
 .leave-comment{
@@ -1292,10 +1278,17 @@ svg{
         }
     }
     button{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--s1);
+        border-radius: 4px;
         svg{
-            background: var(--s1);
             padding: 4px;
-            border-radius: 4px;
+            width: 30px;
+            height: 30px;
         }
     }
 }
@@ -1528,6 +1521,7 @@ svg{
           }
         }
     }
+    z-index: 2;
     @include maxQuery(1399){
         gap: 16px 16px;
         .cmn-socialbutton{

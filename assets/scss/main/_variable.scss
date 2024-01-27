@@ -296,6 +296,9 @@
 				.nav-link{
 					outline: none;
 					border: unset;
+					&.active{
+						background: #e1d7d758;
+					}
 				}
 			}
 		}
