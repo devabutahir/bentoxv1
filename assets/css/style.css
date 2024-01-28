@@ -3148,7 +3148,7 @@ iframe {
     position: absolute;
     top: 20px;
     left: -30px;
-    min-width: 240px;
+    min-width: 200px;
     opacity: 0;
     width: -moz-max-content;
     width: max-content;
